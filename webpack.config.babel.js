@@ -40,12 +40,6 @@ module.exports = (env, options) => {
       alias: {
         coms: path.resolve('./coms')
       }
-    },
-    devServer: {
-      host: '0.0.0.0',
-      contentBase: '/build/',
-      compress: true,
-      progress: true
     }
   }
 }
