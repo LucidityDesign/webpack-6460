@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "plugins": [
+    "import",
+    "react",
+    "babel"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-underscore-dangle": [2, { "allowAfterThis": true }],
+    "react/jsx-filename-extension": 0,
+    "comma-dangle": [2, "never"],
+    "semi": [2, "never"],
+    "space-before-function-paren": [2, "always"],
+    "no-plusplus": [2, {
+      "allowForLoopAfterthoughts": true
+    }],
+    "no-param-reassign": [2, { "props": false }],
+    "class-methods-use-this": 1,
+    "no-unused-expressions": 1,
+    "react/forbid-prop-types": 1,
+    "react/prefer-stateless-function": 1
+  },
+  "globals": {
+    "NODE_ENV": true,
+    "clearTimeout": true,
+    "console": true,
+    "document": true,
+    "global": true,
+    "Image": true,
+    "module": true,
+    "navigator": true,
+    "process": true,
+    "require": true,
+    "setTimeout": true,
+    "window": true,
+    "Buffer": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
+    }
+  }
+}
